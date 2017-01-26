@@ -1,0 +1,36 @@
+{
+    "description": "Wino jabłkowe. Słodkie białe wino owocowe na bazie świeżo wyciskanego soku z jabłek. W moim przypadku wyszło dość spontanicznie. Wracając z plaży, zauważyłem dziko rosnącą jabłoń. Owoce okazały się bardzo słodkie i soczyste. Z zerwanych jabłek wycisnąłem sok i nastawiłem wino.",
+    "id": "jablkowe",
+    "images": [
+        "img/wines/wino-jablkowe.0.jpg",
+        "img/wines/wino-jablkowe.1.jpg",
+        "img/wines/wino-jablkowe.2.jpg",
+        "img/wines/wino-jablkowe.3.jpg"
+    ],
+    "name": "Wino Jabłkowe",
+    "ingredients": [
+        {"name":"Jabłka","index":"0.9","miara":"kg"},
+        {"name":"lub sok","index":"0.5","miara":"l"},
+        {"name":"Cukier","index":"0.28","miara":"kg"},
+        {"name":"Woda","index":"0.35","miara":"l"}
+    ],
+    "details": [
+        {"name":"Smak","type": "jabłkowe"},
+        {"name":"Kolor","type":"białe"},
+        {"name":"Rodzaj","type":"słodkie"},
+        {"name":"Alkohol","type":"ok. 12-15%"}
+    ],
+    "times": [
+        {"name":"Fermentacja","type":"ok. miesiąca"},
+        {"name":"Klarowanie","type":"ok. pół miesiąca"},
+        {"name":"Spożycie","type":"ok. 2 miesięcy"},
+        {"name":"Zalecane spożycie","type":"ok. 3 miesięcy"},
+        {"name":"Całkowity","type": "ok. 5 miesięcy"}
+    ],
+    "other": [
+        {"name":"Owoce","type":"wyciskamy z nich sok"},
+        {"name":"Wino jest mętne","type":"wina miąższu"},
+        {"name":"Ja to zostawiłem","type":"można spróbować pektopolem"}
+    ]
+}
+

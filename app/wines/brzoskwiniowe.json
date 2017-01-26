@@ -1,0 +1,34 @@
+{
+    "description": "Wino brzoskwiniowe. Owocowe wino brzoskwiniowe, na bazie świeżych brzoskwiń. WIĘCEJ JAK DOFERMENTUJE",
+    "id": "brzoskwiniowe",
+    "images": [
+        "img/wines/wino-brzoskwiniowe.0.jpg",
+        "img/wines/wino-brzoskwiniowe.1.jpg",
+        "img/wines/wino-brzoskwiniowe.2.jpg"
+    ],
+    "name": "Wino Brzoskwiniowe",
+    "ingredients": [
+        {"name":"Brzoskwinie","index":"0.85","miara":"kg"},
+        {"name":"Cukier","index":"0.3","miara":"kg"},
+        {"name":"Cytryna","index":"0.2","miara":"szt."},
+        {"name":"Woda","index":"0.4","miara":"l"}
+    ],
+    "details": [
+        {"name":"Smak","type": "brzoskwiniowy"},
+        {"name":"Kolor","type":"UNKNOWN"},
+        {"name":"Rodzaj","type":"UNKNOWN"},
+        {"name":"Alkohol","type":"UNKNOWN"}
+    ],
+    "times": [
+        {"name":"Fermentacja","type":"ok. 1.5 miesiąca"},
+        {"name":"Klarowanie","type":"ok. miesiąca"},
+        {"name":"Spożycie","type":"ok. miesiąca"},
+        {"name":"Zalecane spożycie","type":"UNKNOWN"},
+        {"name":"Całkowity","type": "UNKNOWN"}
+    ],
+    "other": [
+        {"name":"Owoce","type":"małe kwaskowate"},
+        {"name":"Pochodzenie","type":"uprawa własna"}
+    ]
+}
+

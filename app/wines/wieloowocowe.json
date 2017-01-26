@@ -1,0 +1,34 @@
+{
+    "description": "Wino wieloowocowe. Słodkie wino owocowe, na bazie kupnej mrożonej mieszanki kompotowej. Mrożonki możemy zastąpić oczywiście kompotami, sokami z własnej spiżarni. W moim przypadku wino posiada kwaskowaty posmak, gdyż w mieszance dominowały śliwki, pożeczki, maliny,truskawi i rabarbar. Domyślam się, że to za sprawą tego ostatniego jest ten posmak. Nie mniej wino jest bardzo ciekawe przez to w smaku. Słodkie, a jednocześnie wyczuwalnie kwaskowate.",
+    "id": "wieloowocowe",
+    "images": [
+        "img/wines/wino-wieloowocowe.0.jpg",
+        "img/wines/wino-wieloowocowe.1.jpg",
+        "img/wines/wino-wieloowocowe.2.jpg"
+    ],
+    "name": "Wino Wieloowocowe",
+    "ingredients": [
+        {"name":"Owoce","index":"0.67","miara":"kg"},
+        {"name":"Cukier","index":"0.2","miara":"kg"},
+        {"name":"Cytryna","index":"0.2","miara":"szt."},
+        {"name":"Woda","index":"0.27","miara":"l"}
+    ],
+    "details": [
+        {"name":"Smak","type": "wieloowocowy"},
+        {"name":"Kolor","type":"czerwony"},
+        {"name":"Rodzaj","type":"półsłodki"},
+        {"name":"Alkohol","type":"ok 12-15%"}
+    ],
+    "times": [
+        {"name":"Fermentacja","type":"ok. 1,5 miesiąca"},
+        {"name":"Klarowanie","type":"ok. miesiąca"},
+        {"name":"Spożycie","type":"po miesiącu"},
+        {"name":"Zalecane spożycie","type":"po 3 miesiącach"},
+        {"name":"Całkowity","type": "ok. 5 miesięcy"}
+    ],
+    "other": [
+        {"name":"Mrożone owoce","type":"rozmrozić, wycisnąć sok."},
+        {"name":"Mrożone owoce","type":"można zastąpić przetworami, kompotami, sokami, świeżymi owocami"}
+    ]
+}
+

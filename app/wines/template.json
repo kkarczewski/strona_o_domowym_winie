@@ -1,0 +1,35 @@
+{
+    "description": "Szczegółowy słowny opis wina.",
+    "id": "chabrowe", //po tym id jest wczytywany json do strony
+    "images": [
+        "img/wines/wino-chabrowe.0.jpg",
+        "img/wines/wino-chabrowe.1.jpg",
+        "img/wines/wino-chabrowe.2.jpg",
+        "img/wines/wino-chabrowe.3.jpg"
+    ],
+    "name": "Wino ", //nazwa wina wyświetlana na details
+    "ingredients": [
+        {"name":"","index":"","miara":""},
+        {"name":"Cukier","index":"","miara":"kg"},
+        {"name":"","index":"","miara":""},
+        {"name":"Woda","index":"","miara":"l"}
+    ],
+    "details": [
+        {"name":"Smak","type": ""},
+        {"name":"Kolor","type":""},
+        {"name":"Rodzaj","type":""},
+        {"name":"Alkohol","type":""}
+    ],
+    "times": [
+        {"name":"Fermentacja","type":"ok. miesiąca"},
+        {"name":"Klarowanie","type":"ok. pół miesiąca"},
+        {"name":"Spożycie","type":""},
+        {"name":"Zalecane spożycie","type":""},
+        {"name":"Całkowity","type": ""}
+    ],
+    "other": [
+        {"name":"","type":""},
+        {"name":"","type":""}
+    ]
+}
+

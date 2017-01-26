@@ -1,0 +1,59 @@
+[
+    {
+        "age": 3, 
+        "id": "chabrowe",
+        "imageUrl": "img/wines/wino-chabrowe.0.jpg", 
+        "name": "Wino Chabrowe", 
+        "snippet": "Wino chabrowe. Bardzo pyszne w smaku. Po otwarciu butelki roztcza się piękny słomkowy zapach.",
+        "details": "Różowe słodkie"
+    }, 
+    {
+        "age": 1, 
+        "id": "truskawkowe", 
+        "imageUrl": "img/wines/wino-truskawkowe.0.jpg", 
+        "name": "Wino Truskawkowe", 
+        "snippet": "Wino truskawkowe. Bardzo pyszne, słodkie wino. Po otwarciu butelki od razu czuć zapach truskawek.",
+        "details": "Czerwone słodkie"
+    }, 
+    {
+        "age": 0, 
+        "id": "ryzowe", 
+        "imageUrl": "img/wines/wino-ryzowe.0.jpg", 
+        "name": "Wino Ryżowe",
+        "snippet": "Wino ryżowe. Bardzo mocne wino na bazie ryżu, z dodatkiem rodzynek.",
+        "details": "Białe półsłodkie"
+    },
+    {
+        "age": 2,
+        "id": "wieloowocowe",
+        "imageUrl": "img/wines/wino-wieloowocowe.0.jpg",
+        "name": "Wino Wieloowocowe",
+        "snippet": "Wino wieloowocowe. Słodkie wino owocowe, na bazie mieszanki kompotowej, z kwaskowatym posmakiem.",
+        "details": "Czerwone półsłodkie"
+    },
+    {
+        "age": 4,
+        "id": "jablkowe",
+        "imageUrl": "img/wines/wino-jablkowe.0.jpg",
+        "name": "Wino Jabłkowe",
+        "snippet": "Wino jabłkowe. Słodkie wino owocowe, na bazie soku z jabłek, z kwaskowatym posmakiem.",
+        "details": "Białe słodkie"
+    },
+    {
+        "age": 5,
+        "id": "dzikaroza",
+        "imageUrl": "img/wines/wino-dzikaroza.0.jpg",
+        "name": "Wino z Dzikiej Róży",
+        "snippet": "Wino z dzikiej róży. Wino owocowe, na bazie owoców z dzikiej róży. Bardzo specyficzny smak.",
+        "details": "Białe wytrawne"
+    },
+    {
+        "age": 6,
+        "id": "brzoskwiniowe",
+        "imageUrl": "img/wines/wino-brzoskwiniowe.0.jpg",
+        "name": "Wino Brzoskwiniowe",
+        "snippet": "Wino brzoskwiniowe. Wino owocowe, na bazie owoców brzoskwini.",
+        "details": "Białe słodkie"
+    }
+
+]

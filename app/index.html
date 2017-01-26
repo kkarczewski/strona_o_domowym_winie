@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="pl" ng-app="wineApp">
+<head>
+  <meta charset="unicode">
+  <title>My Wine Gallery</title>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="bower_components/angular-dropdowns/angular-dropdowns.css">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/dropdown.css">
+  <link rel="stylesheet" href="bower_components/angular-ui-select/dist/select.css">
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/select2/3.4.5/select2.css">
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.8.5/css/selectize.default.css">
+  <link rel="stylesheet" href="bower_components/ng-dialog/css/ngDialog.css">
+  <link rel="stylesheet" href="bower_components/ng-dialog/css/ngDialog-theme-default.css">
+  <link rel="stylesheet" href="css/ngdialog.css">
+  <link rel="stylesheet" href="bower_components/angucomplete-alt/angucomplete-alt.css">
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/angular-resource/angular-resource.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.js"></script>
+  <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+  <script src="bower_components/angular-dropdowns/angular-dropdowns.js"></script>
+  <script src="bower_components/angular-ui-select/dist/select.js"></script>
+  <script src="bower_components/angular-uuid2/dist/angular-uuid2.js"></script>
+<!---  <script src="bower_components/log4js.js"></script>--->
+  <script src="bower_components/ng-csv/build/ng-csv.js"></script>
+  <script src="bower_components/log4js/log4js/src/main/js/log4js.js"></script>
+  <script src="bower_components/ng-pattern-restrict/src/ng-pattern-restrict.js"></script>
+  <script src="bower_components/ng-dialog/js/ngDialog.min.js"></script>  <script src="bower_components/sprintf/src/angular-sprintf.js"></script>
+  <script src="bower_components/sprintf/src/sprintf.js"></script>
+  <script src="bower_components/moment/moment.js"></script>
+  <script src="bower_components/angular-moment/angular-moment.js"></script>
+  <script src="bower_components/moment/locale/pl.js"></script>
+  <script src="bower_components/angucomplete-alt/angucomplete-alt.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/filters.js"></script>
+  <script src="js/services.js"></script>
+  <script src="js/demo.js"></script>
+  <script src="js/date.js"></script>
+  <script src="js/myscripts.js"></script>
+</head>
+<body>
+  <script>
+    log.info('In body');//info can be changed for debug,warn,error
+    log.info(Log.dumpObject(new Array('apple','pear','orange','banana')));
+  </script>
+  <div class="col-md-2">Aktualna godzina:<div id="datetime"></div></div>
+  <div ng-controller="WineDropdownCtrl">
+    <button
+      dropdown-menu="ddSelectOptions"
+      dropdown-model="ddSelectSelected"
+      dropdown-item-label="text"
+      class="btn-menu">Menu
+    </button>
+  </div>
+  <div class="view-container">
+    <div ng-view class="view-frame"></div>
+  </div>
+  <div class="footer">
+    <div class="center" ng-controller="WineLinkyCtrl">
+      Kontakt mailowy: <span ng-bind-html="mail | linky"></span>. 
+      Dziękuję za odwiedzenie <span ng-bind-html="site | linky"></span>.
+    </div>
+
+    <div class="center" ng-controller="WineSanitizeCtrl">
+      <p ng-bind-html="deliberatelyTrustDangerousSnippet()"></p>
+    </div>
+
+    <div class="center" ng-controller="WineUUIDCtrl">
+      <p>UUID: {{id}}</p>
+    </div>
+
+    <div class="center" ng-controller="WineCSVCtrl">
+      <button class="btn btn-default"
+              ng-csv="getArray" csv-header="getHeader()" filename="{{ filename }}">Export to CSV with header</button>
+    </div>
+
+    <div class="center">Przykład dla sprintf {{ "%+010d"|sprintf:-123 }}</pre></div>
+
+    <div class="center" ng-controller="WineMomentCtrl as main">
+      <span>Data wejścia: {{main.timeOne | amDateFormat:'DD.MM.YYYY HH:mm:ss'}}</span>
+    </div>
+
+    <div class="center" ng-controller="WineDialogCtrl">
+      <div class="buttons">
+        <button ng-click="open()" class="demo">Demo dialog</button>
+      </div>
+    </div>
+
+    <script type="text/ng-template" id="firstDialog">
+      <div class="ngdialog-message">
+        <h2>Domowe Wino!</h2>
+        <div>Na stronie znajdziesz przepisy na domowe wina:</div>	
+        <ul class="mt">
+          <li>Owocowe, warzywne, kwiatowe</li>
+          <li>Przepisy, proporcje, przydatne informacje</li>
+          <li>Kalkulator obliczający proporcje</li>
+          <li>I wiele innych.</li>
+        </ul>
+        <div class="mt">Wkrótce rozbudowa o dział piwny.</div>
+      </div>
+      <div class="ngdialog-buttons mt">
+        <button type="button" class="ngdialog-button ngdialog-button-primary" ng-click="next()">►</button>
+      </div>
+    </script>
+
+    <script type="text/ng-template" id="secondDialog">
+      <div class="ngdialog-message">
+        <h2>Domowe piwo!</h2>
+        <div>Już niedługo:</div>
+        <ul class="mt">
+          <li>Pszenica, żyto, jęczmień</li>
+          <li>Jasne, Ciemne</li>
+          <li>Przede wszystkim jednak domowe!</li>
+          <li>I wiele innych ciekawostek.</li>
+        </ul>
+        <div class="mt">Już wkrótce na stronie.</div>
+      </div>
+      <div class="ngdialog-buttons mt">
+        <button type="button" class="ngdialog-button ngdialog-button-primary" ng-click="close()">X</button>
+      </div>
+    </script>
+  </div>
+</body>
+</html>

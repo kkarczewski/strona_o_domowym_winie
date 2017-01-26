@@ -1,0 +1,33 @@
+{
+    "description": "Bardzo mocne wino, o intensywnym aromacie. Głównym składnikiem jest ryż. Czyste wino ryżowe nie jest najlepsze w smaku, dlatego zaleca się dodanie różnych przypraw lub owoców do smaku. W tym przepisie dodałem rodzynki. Dzięki temu wino jest względnie tanie w produkcji i bardzo dobre w smaku.", 
+    "id": "ryzowe", 
+    "images": [
+        "img/wines/wino-ryzowe.0.jpg", 
+        "img/wines/wino-ryzowe.1.jpg", 
+        "img/wines/wino-ryzowe.2.jpg" 
+    ], 
+    "name": "Wino Ryżowe",
+    "ingredients": [
+        {"name":"Ryż","index":"0.2","miara":"kg"},
+        {"name":"Cukier","index":"0.25","miara":"kg"},
+        {"name":"Rodzynki","index":"0.02","miara":"kg"},
+        {"name":"Woda","index":"0.75","miara":"l"}
+    ],
+    "details": [
+        {"name":"Smak","type": "ryżowe"},
+        {"name":"Kolor","type":"białe"},
+        {"name":"Rodzaj","type":"słodkie"},
+        {"name":"Alkohol","type":"ok. 15-17%"}
+    ],
+   "times": [
+        {"name":"Fermentacja","type":"ok. miesiąca"},
+        {"name":"Klarowanie","type":"ok. pół miesiąca"},
+        {"name":"Spożycie","type":"ok. miesiącu"},
+        {"name":"Zalecane spożycie","type":"Po 3 miesiącach"},
+        {"name":"Całkowity","type": "5 miesięcy"}
+    ],
+    "other": [
+        {"name":"Ryż","type":"Najtańszy z paczki."},
+        {"name":"Zalecane rodzynki","type":"poprawiają smak."}
+    ]
+}

@@ -1,0 +1,35 @@
+{  
+    "description": "Wino chabrowe zrobione na bazie suszonych płatków kwiatu o nazwie bławatek chaber. Jest to słodkie wino, różowego koloru. Po odkorkowaniu butelki czuć charakterystyczny słomkowy zapach.", 
+    "id": "chabrowe", 
+    "images": [
+        "img/wines/wino-chabrowe.0.jpg", 
+        "img/wines/wino-chabrowe.1.jpg", 
+        "img/wines/wino-chabrowe.2.jpg",
+        "img/wines/wino-chabrowe.3.jpg",
+        "img/wines/wino-chabrowe.4.jpg" 
+    ], 
+    "name": "Wino Chabrowe",
+    "ingredients": [
+        {"name":"Chaber","index":"0.22","miara":"l"},
+        {"name":"Cukier","index":"0.25","miara":"kg"},
+        {"name":"Cytryna","index":"0.1","miara":"szt."},
+        {"name":"Woda","index":"0.66","miara":"l"}
+    ],
+    "details": [
+        {"name":"Smak","type": "chabrowy"},
+        {"name":"Kolor","type":"różowe"},
+        {"name":"Rodzaj","type":"słodkie"},
+        {"name":"Alkohol","type":"ok. 15-17%"}
+    ],
+    "times": [
+        {"name":"Fermentacja","type":"ok. miesiąca"},
+        {"name":"Klarowanie","type":"ok. pół miesiąca"},
+        {"name":"Spożycie","type":"ok. 2 miesiące"},
+        {"name":"Zalecane spożycie","type":"Po pół roku"},
+        {"name":"Całkowity","type": "8 miesięcy"} 
+    ],
+    "other": [
+        {"name":"Kwiaty chabru","type":"Użyłem suszonych."},
+        {"name":"Cytryna","type":"można zastąpić kwaskiem"}
+    ]
+}

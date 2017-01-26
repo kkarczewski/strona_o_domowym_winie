@@ -1,0 +1,46 @@
+<div class="container-fluid">
+  <div class="row" ng-controller="WineAnguCompleteCtrl">
+    <div class="col-md-2">
+      <!--Sidebar content-->
+      Sortuj:
+      <select ng-model="orderProp">
+        <option value="name">Alfabetycznie</option>
+        <option value="age">Najnowsze</option>
+        <option value="-age">Najstarsze</option>
+      </select>
+      <p></p>
+      <div>
+        <div angucomplete-alt id="ex2"
+             placeholder="Wybierz smak wina"
+             pause="300"
+             selected-object="selectedPersonFn"
+             local-data="people"
+             search-fields="name,details"
+             title-field="name"
+             description-field="details"
+             image-field="imageUrl"
+             minlength="1"
+             input-class="form-control form-control-small"
+             match-class="highlight"
+             initial-value="selectedPerson">
+          </div>
+        </div>
+        <div ng-show="selectedPerson">
+         <p> Wybrano: {{selectedPerson.name}}</p>
+        </div>
+        <p></p>
+      </div>
+    <div class="col-md-10">
+      <!--Body content-->
+
+      <ul class="wines">
+        <li ng-repeat="wine in wines | filter:selectedPerson.name | orderBy:orderProp" class="thumbnail wine-listing">
+          <a href="#/wines/{{wine.id}}" class="thumb"><img ng-src="{{wine.imageUrl}}"></a>
+          <a href="#/wines/{{wine.id}}">{{wine.name}}</a>
+          <p>{{wine.snippet}}</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer" ng-bind-html>{{snippet | linky}}</div>
+</div>

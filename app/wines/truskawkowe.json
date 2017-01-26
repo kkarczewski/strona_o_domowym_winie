@@ -1,0 +1,35 @@
+{
+    "description": "Bardzo słodkie wino owocowe koloru czerwonego. Na bazie świeżo wyciskanego soku truskawkowego. Na drożdżach winiarskich szczepu Burgund. Po odkorkowaniu od razu czuć słodki zapach truskawki. Bardzo dobre w smaku.", 
+    "id": "truskawkowe", 
+    "images": [
+        "img/wines/wino-truskawkowe.0.jpg", 
+        "img/wines/wino-truskawkowe.1.jpg", 
+        "img/wines/wino-truskawkowe.2.jpg",
+        "img/wines/wino-truskawkowe.3.jpg",
+        "img/wines/wino-truskawkowe.4.jpg" 
+    ], 
+    "name": "Wino Truskawkowe", 
+    "ingredients": [
+        {"name":"Truskawki","index":"0.5","miara":"kg"},
+        {"name":"Cukier","index":"0.18","miara":"kg"},
+        {"name":"Cytryna","index":"0.2","miara":"szt."},
+        {"name":"Woda","index":"0.19","miara":"l"}
+    ],
+    "details": [
+        {"name":"Smak","type": "truskawkowy"},
+        {"name":"Kolor","type":"czerwony"},
+        {"name":"Rodzaj","type":"słodki"},
+        {"name":"Alkohol","type":"ok. 15-17%"}
+    ],
+   "times": [
+        {"name":"Fermentacja","type":"ok. miesiąca"},
+        {"name":"Klarowanie","type":"ok. miesiąca"},
+        {"name":"Spożycie","type":"ok. 2 miesiące"},
+        {"name":"Zalecane spożycie","type":"Po pół roku"},
+        {"name":"Całkowity","type": "8 miesięcy"}
+    ],
+    "other": [
+        {"name":"Owoce","type":"Puszczone przez sokowirówkę."},
+        {"name":"Cytryna","type":"można zastąpić kwaskiem"}
+    ]
+}
