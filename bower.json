@@ -1,0 +1,29 @@
+{
+  "name": "angular-phonecat",
+  "description": "A starter project for AngularJS",
+  "version": "0.0.0",
+  "homepage": "https://github.com/angular/angular-phonecat",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular": "1.4.x",
+    "angular-mocks": "1.4.x",
+    "jquery": "~2.1.1",
+    "bootstrap": "~3.1.1",
+    "angular-route": "1.4.x",
+    "angular-resource": "1.4.x",
+    "angular-animate": "1.4.x",
+    "angular-sanitize": "1.4.x",
+    "angular-dropdowns": "1.5.1",
+    "angular-ui-select": "0.13.2",
+    "angular-uuid2": "",
+    "ng-csv": "",
+    "log4js": "",
+    "ng-pattern-restrict": "0.2.0",
+    "ng-dialog": "",
+    "sprintf": "",
+    "moment": "2.10.6",
+    "angular-moment": "0.10.3",
+    "angucomplete-alt": ""
+  }
+}
